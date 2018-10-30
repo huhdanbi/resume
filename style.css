@@ -20,7 +20,7 @@ address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 h1{font-weight:normal;font-size:48px;line-height:1.3;letter-spacing:-1.5px}
 
 .area_prof{padding:50px 0 40px}
-.side_prof{position:fixed;top:0;left:0;bottom:0;z-index:99;width:300px;padding:300px 50px 50px;color:#fff;background:#212121 url(./left_bg.png) no-repeat}
+.side_prof{position:fixed;top:0;left:0;bottom:0;z-index:99;width:300px;padding:280px 50px 50px;color:#fff;background:#212121 url(//huhdanbi.github.io/resume/left_bg.png) no-repeat}
 .side_prof .box_contact{position:absolute;left:40px;bottom:50px}
 .area_prof .box_contact .tit_prof{font-size:20px;font-weight:normal}
 .area_prof .box_contact .list_contact li{margin-top:5px;font-size:15px}
