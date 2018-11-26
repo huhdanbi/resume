@@ -3,91 +3,91 @@
         "name" : "카카오 프렌즈 글로벌몰",
         "link" : "//us.kakaofriends.com/",
         "company" : "디케이테크인",
-        "image" : "./images/image_friends.png",
-        "desc" : "미국을 타겟으로 한 카카오 프렌즈 글로벌몰 사이트이며 마크업을 진행하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_friends.png",
+        "desc" : "마크업 50%"
     },
     {
         "name" : "카카오 스토리 채널카드 개편",
         "link" : "//accounts.kakao.com/login/kakaostory",
         "company" : "디케이테크인",
-        "image" : "./images/image_story.png",
-        "desc" : "카카오 스토리의 마크업 담당자로 채널카드 개편을 진행하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_story.png",
+        "desc" : "마크업 관련 커뮤니케이션 담당 및 작업 담당자"
     },
     {
         "name" : "카카오 네비 헬로카봇 프로모션",
         "link" : "//kakaonavi.kakao.com/launch/event/carbot/index.do",
         "company" : "디케이테크인",
-        "image" : "./images/image_carbot.png",
-        "desc" : "모바일전용 프로모션으로 웹접근성을 고려하여 마크업 작업을 하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_carbot.png",
+        "desc" : "마크업 100%"
     },
     {
         "name" : "모바일 다음메인 뉴스탭 통합슬롯 개편",
         "link" : "//m.daum.net/",
         "company" : "디케이테크인",
-        "image" : "./images/image_newsTab.png",
-        "desc" : "모바일 다음메인에서 뉴스탭 내부 통합슬롯 개편 마크업을 진행했습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_newsTab.png",
+        "desc" : "마크업 100%"
     },
     {
         "name" : "2017 올해의 검색어",
         "link" : "//search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q=%EC%98%AC%ED%95%B4%EC%9D%98+%EA%B2%80%EC%83%89%EC%96%B4",
         "company" : "디케이테크인",
-        "image" : "./images/image_query.png",
-        "desc" : "2017년, 1년간 제일 핫했던 검색어의 순위를 보여주는 화면입니다. 마크업과 스크립트를 같이 진행하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_query.png",
+        "desc" : "마크업 100% / 스크립트 개발 50%"
     },
     {
         "name" : "다음검색 스포츠 검색개편",
         "link" : "//search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&q=LG%ED%8A%B8%EC%9C%88%EC%8A%A4",
         "company" : "디케이테크인",
-        "image" : "./images/image_lg.png",
-        "desc" : "다음 검색 구기종목 스포츠 화면으로 모든 마크업과 스크립트 개발을 같이 진행하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_lg.png",
+        "desc" : "마크업 100% / 스크립트 개발 70%"
     },
     {
         "name" : "윔팩토리 사이트 구축",
         "link" : "//www.wimfactory.com/index_v2.html",
         "company" : "울랄라랩",
-        "image" : "./images/image_fact.png",
-        "desc" : "반응형으로 제작된 페이지로 마크업과 스크립트 개발을 같이 진행하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_fact.png",
+        "desc" : "마크업 100% / 스크립트 100%"
     },
     {
         "name" : "WIM-X 대시보드 개편",
         "link" : "#none",
         "company" : "울랄라랩",
-        "image" : "./images/image_wimx.png",
-        "desc" : "데이터를 보여주는 대시보드에 마크업으로 참여하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_wimx.png",
+        "desc" : "마크업 80%"
     },
     {
         "name" : "참투어 사이트 구축",
         "link" : "#none",
         "company" : "포비즈넷",
-        "image" : "./images/image_charm.png",
-        "desc" : "사이트 구축을 위한 마크업을 진행하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_charm.png",
+        "desc" : "마크업 100%"
     },
     {
         "name" : "산웅 엔지니어링",
         "link" : "#none",
         "company" : "포비즈넷",
-        "image" : "./images/image_che.png",
-        "desc" : "사이트 구축을 위한 마크업을 진행하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_che.png",
+        "desc" : "마크업 100%"
     },
     {
         "name" : "신명식품",
         "link" : "#none",
         "company" : "포비즈넷",
-        "image" : "./images/image_bakery.png",
-        "desc" : "사이트 구축을 위한 마크업을 진행하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_bakery.png",
+        "desc" : "마크업 100%"
     },
     {
         "name" : "스포톡",
         "link" : "#none",
         "company" : "포비즈넷",
-        "image" : "./images/image_spo.png",
-        "desc" : "사이트 구축을 위한 마크업을 진행하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_spo.png",
+        "desc" : "마크업 100%"
     },
     {
         "name" : "영광 상사화 축제",
         "link" : "#none",
         "company" : "포비즈넷",
-        "image" : "./images/image_fes.png",
-        "desc" : "사이트 구축을 위한 마크업을 진행하였습니다."
+        "image" : "//huhdanbi.github.io/resume/portfolio/images/image_fes.png",
+        "desc" : "마크업 100%"
     }
 ]
