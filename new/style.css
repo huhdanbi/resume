@@ -75,7 +75,7 @@ table{border-collapse:collapse}
   .mid_cv .cont_cv .wrap_tit{margin:0 50px 0 30px}
 }
 
-@media screen and (max-width: 1100px) and (min-width: 751p) {
+@media screen and (max-width: 1100px){
   .scroll_cv{width:130px}
 
   /* mid_cv */
