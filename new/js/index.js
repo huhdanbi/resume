@@ -27,6 +27,7 @@ const windowWid = document.documentElement.clientWidth;
 const topCV = document.querySelectorAll('.top_cv')[0];
 const scrollBox = document.querySelectorAll('.box_progress ')[0];
 const scrollBG = scrollBox.querySelectorAll('.scroll_progress')[0];
+const evtArr = ['resize', 'scroll'];
 
 const scrollProgress = () =>{
   const windowHeight = document.documentElement.clientHeight;
@@ -57,14 +58,12 @@ const setProgressEvt = () => {
 }
 
 setProgressEvt();
-
-window.addEventListener('resize', () => {
-  setProgressEvt();
-});
-
-document.addEventListener('scroll', () => {
-  setProgressEvt();
-});
+for(let i=0;i<evtArr.length;i+=1){
+  window.addEventListener(evtArr[i], () => {
+    setProgressEvt();
+  });
+  
+}
 
 
 

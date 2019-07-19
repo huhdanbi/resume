@@ -4,6 +4,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <title>타이틀</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./style.css">
   </head>
@@ -21,28 +22,29 @@
           </p>
         </div>
         <dl class="list_contact">
-          <dt>Tel.</dt>
+          <dt><i class="fas fa-mobile-alt"></i>Tel.</dt>
           <dd>010-7753-7058</dd>
-          <dt>Email.</dt>
+          <dt><i class="fas fa-envelope-open-text"></i>Email.</dt>
           <dd>tytydl_@naver.com</dd>
-          <dt>Git.</dt>
+          <dt><i class="fab fa-github-alt"></i>Git.</dt>
           <dd>gitURL</dd>
         </dl>
-        <div class="wrap_nav">
-          <strong>MENU</strong>
-          <ul class="list_nav">
-            <li><a href="#none" class="link_menu">TOP</a></li>
-            <li><a href="#none" class="link_menu">MIDDLE</a></li>
-            <li><a href="#none" class="link_menu">BOTTOM</a></li>
-          </ul>
-        </div>
+      </div>
+
+      <div class="wrap_nav">
+        <strong>MENU</strong>
+        <ul class="list_nav">
+          <li><a href="#top" class="link_menu">TOP</a></li>
+          <li><a href="#middle" class="link_menu">MIDDLE</a></li>
+          <li><a href="#bottom" class="link_menu">BOTTOM</a></li>
+        </ul>
       </div>
       <!-- // top_cv -->
 
       <!-- mid_cv -->
       <div class="mid_cv">
 
-        <div class="cont_cv">
+        <div class="cont_cv" id="top">
           <div class="wrap_tit">
             <strong>BLANK</strong>
             <span class="txt_cv">
@@ -91,7 +93,7 @@
           
         </div>
 
-        <div class="cont_cv">
+        <div class="cont_cv" id="middle">
           <div class="wrap_tit">
             <strong>BLANK</strong>
             <span class="txt_cv">
@@ -120,7 +122,7 @@
           </div>
         </div>
 
-        <div class="cont_cv">
+        <div class="cont_cv" id="bottom">
           <div class="wrap_tit">
             <strong>BLANK</strong>
             <span class="txt_cv">
@@ -131,12 +133,21 @@
 
           <div class="wrap_cont">
             <div class="owl-carousel owl-theme">
-              <div class="item">1</div>
-              <div class="item">2</div>
-              <div class="item">3</div>
-              <div class="item">4</div>
-              <div class="item">5</div>
-          </div>
+              
+                  <todo-item
+                  v-for="item in list"
+                  :item="item"
+                  :style="{backgroundImage:'url(\'' + item.img + '\')'}"
+                  ></todo-item>
+                <!-- <a href="#none">
+                  <em>{{item.companyTit}}</em> 
+                  <strong>{{item.tit}}</strong>
+                  <ul class="list_obj">
+                    <li class="txt_html">{{item.obj}}</li>
+                  </ul>
+                </a> -->
+
+            </div>
           </div>
           
         </div>
@@ -160,7 +171,9 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/portfolioVue.js"></script>
   <script src="./js/portfolio.js"></script>
   </body>
 </html>

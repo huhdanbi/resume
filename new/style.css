@@ -39,11 +39,12 @@ html, body, #wrap_cv{height:100%}
 
 .top_cv .list_contact{overflow:hidden;margin-top:118px}
 .top_cv .list_contact dt,.top_cv .list_contact dd{margin-bottom:6px}
-.top_cv .list_contact dt{float:left;width:60px;margin-right:2px}
+.top_cv .list_contact dt{float:left;width:85px;margin-right:2px;color:#9ea9b6}
+.top_cv .list_contact dt i{display:inline-block;width:20px;margin-right:5px;text-align:center;vertical-align:middle}
 .top_cv .list_contact dd{float:none}
 
-.top_cv .wrap_nav{position:absolute;right:50px;top:135px;font-size:12px;letter-spacing:2px;text-align:right}
-.wrap_nav strong{display:block;position:relative;margin-bottom:10px;font-weight:bold}
+.wrap_nav{position:absolute;right:50px;top:135px;z-index:9;font-size:12px;letter-spacing:2px;text-align:right}
+.wrap_nav strong{display:block;position:relative;margin-bottom:10px;font-weight:bold;color:#fff}
 .wrap_nav .list_nav{overflow:hidden}
 .wrap_nav .list_nav li{margin-bottom:5px}
 .wrap_nav .list_nav li .link_menu{display:block;color:#9dfdf2}
@@ -65,7 +66,6 @@ html, body, #wrap_cv{height:100%}
 .wrap_cont .list_cv dd{position:relative;padding:3px 0 0 12px}
 .wrap_cont .list_cv dd::before{position:absolute;left:0;top:4px;content:'-'}
 
-/* 9ea9b6 */
 .wrap_cont .group_exp{margin-top:60px}
 .wrap_cont .group_exp:first-child{margin-top:0}
 .group_exp .area_tit{margin-bottom:10px;border-bottom:1px solid #e1e1e1}
@@ -78,9 +78,31 @@ html, body, #wrap_cv{height:100%}
 .group_exp .area_tit .list_obj li:first-child{margin-left:0}
 .group_exp .list_cv{margin-top:0}
 
-/* pf */
-.owl-carousel .item{background-color:#666}
+/* portfolio - owl carousel */
 
+
+
+
+.owl-carousel .item{overflow:hidden;position:relative;height:0;padding-bottom:72%;background-color:#666;background-size:cover}
+.owl-carousel .item a{position:absolute;left:0;top:0;bottom:0;right:0}
+.owl-carousel .owl-stage-outer{margin-bottom:8px}
+.owl-carousel .owl-nav{float:left}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{display:block;position:relative;float:left;width:30px;height:30px;margin-left:2px;border:1px solid #666;transition:all .4s}
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span{display:none}
+.owl-carousel .owl-nav button:first-child{margin-left:0}
+.owl-carousel .owl-nav button.owl-prev::after,
+.owl-carousel .owl-nav button.owl-next::after{font-size:17px;line-height:28px;font-family:'Font Awesome 5 Free';color:#666;font-weight:900;transition:all .4s}
+.owl-carousel .owl-nav button.owl-prev::after{content:'\f053'}
+.owl-carousel .owl-nav button.owl-next::after{content:'\f054'}
+.owl-carousel .owl-nav button:hover{background-color:#fe8b55;border-color:#fe8b55}
+.owl-carousel .owl-nav button:hover::after{color:#fff}
+
+.owl-carousel .owl-dots{float:right}
+.owl-carousel .owl-dots button{width:11px;height:11px;margin-left:5px;border-radius:50%;background-color:#dedede}
+.owl-carousel .owl-dots button.active{background-color:#fe8b55}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{display:block}
 
 @media screen and (max-width: 1200px) {
   .scroll_cv{width:130px}
@@ -94,14 +116,9 @@ html, body, #wrap_cv{height:100%}
 
   /* top_cv */
   .top_cv .wrap_slogan{float:none;margin:0}
-  .top_cv .list_contact{margin-top:85px}
-  .top_cv .list_contact dt,.top_cv .list_contact dd{margin-bottom:6px}
-  .top_cv .list_contact dt{float:left;width:60px;margin-right:2px}
-  .top_cv .list_contact dd{float:none}
-  
+  .top_cv .list_contact{margin-top:85px}  
 
   /* mid_cv */
-  .mid_cv{left:130px;padding:80px 50px}
   .mid_cv .cont_cv .wrap_tit{width:100%;margin:0 0 30px}
   .mid_cv .cont_cv .wrap_cont{width:100%}
 }
@@ -112,10 +129,10 @@ html, body, #wrap_cv{height:100%}
 
   /* top_cv */
   .top_cv{padding-left:160px}
-  .top_cv .wrap_nav{top:50px;left:48px;right:0;font-size:12px;letter-spacing:2px;text-align:right}
+  .wrap_nav{position:fixed;top:0;left:0;right:0;padding:50px 0 0 48px;font-size:12px;letter-spacing:2px;text-align:right}
   .wrap_nav strong{float:left;margin:0 15px 0 0}
   .wrap_nav .list_nav li{float:left;margin-right:15px}
-
+  .wrap_nav .list_nav li .link_menu{color:#9ea9b6}
 
   
   /* mid_cv */
@@ -138,7 +155,7 @@ html, body, #wrap_cv{height:100%}
   /* top_cv */
   .top_cv{height:400px;padding:135px 35px}
   .top_cv .list_contact{margin-top:65px}
-  .top_cv .wrap_nav{left:35px}
+  .wrap_nav{padding-left:35px}
 
   /* mid_cv */
   .mid_cv{position:absolute;left:14px;right:14px;padding:40px 20px;background-color:#fff}
