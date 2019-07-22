@@ -2,6 +2,7 @@ var owl = $('.owl-carousel');
 
 owl.owlCarousel({
   loop:false,
+  // stagePadding : 10,
   nav:true,
   margin:5,
   responsive:{
@@ -38,3 +39,23 @@ owl.owlCarousel({
   }
 });
 
+
+//firefox
+owl.on('DOMMouseScroll','.owl-stage',function(e){
+  if (e.originalEvent.detail > 0){ 
+      owl.trigger('next.owl');
+      } else {
+      owl.trigger('prev.owl');
+  }
+  e.preventDefault();
+});
+
+//chrome, ie
+owl.on('mousewheel', '.owl-stage', function (e) {
+  if (e.originalEvent.wheelDelta > 0) {
+      owl.trigger('next.owl');
+  } else {
+      owl.trigger('prev.owl');
+  }
+  e.preventDefault();
+});
