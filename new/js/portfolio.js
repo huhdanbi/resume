@@ -4,39 +4,59 @@ owl.owlCarousel({
   loop:false,
   // stagePadding : 10,
   nav:true,
-  margin:5,
+  margin:15,
   responsive:{
-    0:{
-      items:1
+    0 : {
+      items : 1
     },
-    480:{
+    650:{
       items:2
     },
-    830:{
+    800:{
       items:3
     },
-    1050:{
+    1400:{
       items:4
     },
-    1100:{
-      items:2
-    },
-    1200:{
-      items:2
-    },
-    1201:{
-      items:1
-    },
-    1300:{
-      items:2
-    },
-    1500:{
-      items:3
-    },
-    1800:{
+    1600:{
       items:4
+    },
+    1700:{
+      items:5
     }
   }
+  // responsive:{
+  //   0:{
+  //     items:1
+  //   },
+  //   480:{
+  //     items:2
+  //   },
+  //   830:{
+  //     items:3
+  //   },
+  //   1050:{
+  //     items:4
+  //   },
+  //   1100:{
+  //     items:2
+  //   },
+  //   1200:{
+  //     items:2
+  //   },
+  //   1201:{
+  //     items:1
+  //   },
+  //   1300:{
+  //     items:2
+  //   },
+  //   1500:{
+  //     items:3
+  //   },
+  //   1800:{
+  //     items:4
+  //   }
+  // }
 });
 
 

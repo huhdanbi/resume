@@ -28,6 +28,7 @@ const topCV = document.querySelectorAll('.top_cv')[0];
 const scrollBox = document.querySelectorAll('.box_progress ')[0];
 const scrollBG = scrollBox.querySelectorAll('.scroll_progress')[0];
 const navElem = document.querySelectorAll('.wrap_nav')[0];
+const menuElem = navElem.querySelectorAll('.link_menu');
 const evtArr = ['resize', 'scroll'];
 let scrollState = true;
 
@@ -76,16 +77,31 @@ const setMenuAddClass = () => {
   }
 }
 
+const eachEvtCallback = (length, callback) => {
+  for(let i=0;i<length;i+=1){
+    callback(i);
+  }
+}
+
 setProgressEvt();
 setMenuAddClass();
 
-for(let i=0;i<evtArr.length;i+=1){
+eachEvtCallback(evtArr.length, (i) => {
   window.addEventListener(evtArr[i], () => {
     const scrollTop = (window.scrollY);
 
     setMenuAddClass();
     setProgressEvt(scrollTop);
   });
-  
-}
+});
 
+
+// for(let i=0;i<evtArr.length;i+=1){
+//   window.addEventListener(evtArr[i], () => {
+//     const scrollTop = (window.scrollY);
+
+//     setMenuAddClass();
+//     setProgressEvt(scrollTop);
+//   });
+  
+// }

@@ -117,14 +117,7 @@ html, body, #wrap_cv{height:100%}
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{display:block}
 .wrap_cont .txt_desc{float:right;font-size:11px}
 
-
-/* pf - animation */
-/* @keyframes txtMove {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-} */
-
-
+.txt_end{display:block;padding-top:50px;margin-top:50px;border-top:1px solid #dedede;text-align:center}
 
 @media screen and (max-width: 1200px) {
   .scroll_cv{width:130px}
