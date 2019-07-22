@@ -54,7 +54,7 @@ const setProgressEvt = (scrollTop) => {
     scrollBG.style.width = progress;
     scrollBG.style.height = '8px';
     scrollBG.style.transition = 'width .5s';
-  }else if(windowWid <= 1100 && windowWid >= 750 ){
+  }else if(windowWid <= 1250 && windowWid >= 750 ){
     navElem.classList.add('fix');
   }else{
     navElem.classList.remove('fix');

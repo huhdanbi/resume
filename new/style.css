@@ -43,6 +43,7 @@ html, body, #wrap_cv{height:100%}
 .top_cv .list_contact dt{float:left;width:85px;margin-right:2px;color:#9ea9b6}
 .top_cv .list_contact dt i{display:inline-block;width:20px;margin-right:5px;text-align:center;vertical-align:middle}
 .top_cv .list_contact dd{float:none}
+.top_cv .list_contact dd a{color:#fff}
 
 .wrap_nav{position:absolute;right:50px;top:135px;z-index:9;font-size:12px;letter-spacing:2px;text-align:right;background-color:rgba(51,58,66,1)}
 .wrap_nav strong{display:block;position:relative;margin-bottom:10px;font-weight:bold;color:#fff}
@@ -64,7 +65,7 @@ html, body, #wrap_cv{height:100%}
 .wrap_cont .list_cv{margin-top:40px}
 .wrap_cont .list_cv:first-child{margin-top:0}
 .wrap_cont .list_cv dt{margin-bottom:10px;font-size:16px;font-weight:bold}
-.wrap_cont .list_cv dd{position:relative;padding:3px 0 0 12px}
+.wrap_cont .list_cv dd{position:relative;padding:3px 0 0 12px;word-break:keep-all}
 .wrap_cont .list_cv dd::before{position:absolute;left:0;top:4px;content:'-'}
 
 .wrap_cont .group_exp{margin-top:60px}
@@ -85,20 +86,20 @@ html, body, #wrap_cv{height:100%}
 
 /* portfolio - owl carousel */
 .owl-carousel .owl-stage-outer{margin-bottom:8px}
-.owl-carousel .item{overflow:hidden;position:relative;height:0;padding-bottom:85%;color:#fff;background-size:100%;background-position:center top;border-radius:2px;transition:all .5s}
+.owl-carousel .item{overflow:hidden;position:relative;height:0;padding-bottom:85%;color:#fff;background-size:cover;background-position:center top;border-radius:2px;transition:all .5s}
 .owl-carousel .item::after{position:absolute;left:0;top:0;right:0;bottom:0;border:1px solid rgba(51,58,66,.15);border-radius:2px;pointer-events:none;content:''}
 .owl-carousel .item .group_item{display:table;position:absolute;left:0;top:0;width:100%;height:100%;z-index:9}
 .owl-carousel .item .area_item{display:table-cell;vertical-align:middle;text-align:center}
 .owl-carousel .item .area_item .sub_item{display:none;font-size:12px;color:#9ea9b6}
 .owl-carousel .item .area_item .desc_item{display:none;position:relative;margin-top:8px;padding-top:8px;font-size:13px}
-.owl-carousel .item .area_item .tit_item{display:block;font-size:18px;transition:font-size .5s}
+.owl-carousel .item .area_item .tit_item{display:none;font-size:18px;transition:font-size .5s}
 .owl-carousel .item .area_item .link_item{display:none;width:80%;padding:7px 0;vertical-align:top;background-color:rgba(255,255,255,.7);border:1px solid #fff;border-radius:2px;font-size:12px}
 
-
-.owl-carousel .item:hover{background-size:105%}
+/* .owl-carousel .item:hover{} */
 .owl-carousel .item:hover::after{position:absolute;left:0;top:0;bottom:0;right:0;background-color:rgba(51,58,66,.8);content:''}
 .owl-carousel .item:hover .area_item .sub_item,
-.owl-carousel .item:hover .area_item .desc_item{display:block}
+.owl-carousel .item:hover .area_item .desc_item,
+.owl-carousel .item:hover .area_item .tit_item{display:block}
 .owl-carousel .item:hover .area_item .desc_item::after{position:absolute;left:50%;top:0;width:12px;height:2px;margin-left:-6px;background-color:#fff;content:''}
 .owl-carousel .item:hover .area_item .link_item{display:inline-block;margin-top:8px}
 
@@ -124,17 +125,9 @@ html, body, #wrap_cv{height:100%}
 
 .txt_end{display:block;padding-top:100px;margin-top:100px;border-top:1px solid #dedede;text-align:center}
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .scroll_cv{width:130px}
 
-  /* mid_cv */
-  .mid_cv{left:130px;padding:80px 50px}
-  .mid_cv .cont_cv .wrap_tit{margin-right:80px}
-
-  .txt_end{padding-top:80px;margin-top:80px}
-}
-
-@media screen and (max-width: 1100px){
   /* top_cv */
   .top_cv .wrap_slogan{float:none;margin:0}
   .top_cv .list_contact{margin-top:85px}  
@@ -142,8 +135,17 @@ html, body, #wrap_cv{height:100%}
   .wrap_nav.fix{position:fixed;right:0;padding:20px}
 
   /* mid_cv */
+  .mid_cv{left:130px;padding:80px}
+  /* .mid_cv .cont_cv .wrap_tit{margin-right:80px} */
   .mid_cv .cont_cv .wrap_tit{width:100%;margin:0 0 30px}
   .mid_cv .cont_cv .wrap_cont{width:100%}
+
+
+  .txt_end{padding-top:80px;margin-top:80px}
+}
+
+@media screen and (max-width: 1100px){
+  
   
 }
 
@@ -187,6 +189,7 @@ html, body, #wrap_cv{height:100%}
   /* mid_cv */
   .mid_cv{position:absolute;left:14px;right:14px;padding:40px 20px}
   .mid_cv .cont_cv .wrap_tit{width:100%;margin-right:0}
+  .wrap_cont .list_cv dd{margin-bottom:5px}
   .group_exp .area_tit .txt_etc{display:block}
   
   .txt_end{padding-top:40px;margin-top:40px}

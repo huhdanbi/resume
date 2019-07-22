@@ -27,7 +27,7 @@
           <dt><i class="fas fa-envelope-open-text"></i>Email.</dt>
           <dd>tytydl_@naver.com</dd>
           <dt><i class="fab fa-github-alt"></i>Git.</dt>
-          <dd>gitURL</dd>
+          <dd><a href="https://github.com/huhdanbi/utils" target="_blank">github.com/huhdanbi</a></dd>
         </dl>
       </div>
 
@@ -103,11 +103,11 @@
           <div class="wrap_cont">
             <div class="owl-carousel owl-theme">
               <!-- v-for list -->
-              <div class="item" v-for="item in list" :style="{backgroundImage:'url(\'' + item.img + '\')'}">
+              <div class="item" v-for="item in list" :style="{backgroundImage:'url(\'' + item.image + '\')'}">
                 <div class="group_item">
                   <div class="area_item">
-                    <em class="sub_item">{{item.companyTit}}</em> 
-                    <strong class="tit_item">{{item.tit}}</strong>
+                    <em class="sub_item">{{item.company}}</em> 
+                    <strong class="tit_item">{{item.name}}</strong>
                     <span class="desc_item">{{item.desc}}</span>
                     <a :href="item.link" target="_blank" class="link_item">자세히 보기</a>
                   </div>
