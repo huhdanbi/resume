@@ -102,7 +102,7 @@ eachEvtCallback(menuElem.length, (i) => {
     const selfHash = e.currentTarget.hash;
     const contOffsetTop =  document.querySelector(selfHash).offsetTop + midElem.offsetTop;
     window.scrollTo({
-      top : contOffsetTop - 80,
+      top : windowWid <= 770 ? contOffsetTop - 80 : contOffsetTop,
       left: 0,
       behavior : 'smooth'
     });
