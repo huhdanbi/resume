@@ -1,22 +1,24 @@
-Vue.component('todo-item', {
-  // The todo-item component now accepts a
-  // "prop", which is like a custom attribute.
-  // This prop is called todo.
-  props: ['item'],
-  template: `
-  <div class="item">
-    <a href="#none">
-      <em>{{item.companyTit}}</em> 
-      <strong>{{item.tit}}</strong>
-      <span>{{item.desc}}</span>
-    </a>
-    </div>
-    `
-})
+// Vue.component('todo-item', {
+//   props: ['item'],
+//   template: `
+//   <div class="item">
+//     <div class="group_item">
+//       <div class="area_item">
+//         <em class="sub_item">{{item.companyTit}}</em> 
+//         <strong class="tit_item">{{item.tit}}</strong>
+//         <span class="desc_item">{{item.desc}}</span>
+//         <a v-bind:href="'{{item.link}}'" target="_blank" class="link_item">자세히보기</a>
+//       </div>
+//     </div>
+//   </div>
+//   `
+// })
+
+
 
 const app = new Vue({
   el: '.owl-carousel',
-  data: {
+  data:()=>({
     list: [
       { 
         companyTit: 'some', 
@@ -47,5 +49,5 @@ const app = new Vue({
         desc : 'something 100% / something 80%'
       }
     ]
-  }
+  })
 });

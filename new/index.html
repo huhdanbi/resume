@@ -133,12 +133,17 @@
 
           <div class="wrap_cont">
             <div class="owl-carousel owl-theme">
-              
-                  <todo-item
-                  v-for="item in list"
-                  :item="item"
-                  :style="{backgroundImage:'url(\'' + item.img + '\')'}"
-                  ></todo-item>
+            
+                  <div class="item" v-for="item in list" :style="{backgroundImage:'url(\'' + item.img + '\')'}">
+                    <div class="group_item">
+                      <div class="area_item">
+                        <em class="sub_item">{{item.companyTit}}</em> 
+                        <strong class="tit_item">{{item.tit}}</strong>
+                        <span class="desc_item">{{item.desc}}</span>
+                        <a :href="item.link" target="_blank" class="link_item">자세히 보기</a>
+                      </div>
+                    </div>
+                  </div>
                 <!-- <a href="#none">
                   <em>{{item.companyTit}}</em> 
                   <strong>{{item.tit}}</strong>
