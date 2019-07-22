@@ -78,6 +78,10 @@ html, body, #wrap_cv{height:100%}
 .group_exp .area_tit .list_obj li:first-child{margin-left:0}
 .group_exp .list_cv{margin-top:0}
 
+.pf_cont .wrap_tit{float:none;margin-bottom:30px}
+.pf_cont .wrap_cont{width:100%}
+
+
 /* portfolio - owl carousel */
 .owl-carousel .owl-stage-outer{margin-bottom:8px}
 .owl-carousel .item{overflow:hidden;position:relative;height:0;padding-bottom:85%;color:#fff;background-size:100%;background-position:center top;border-radius:2px;transition:all .5s}
