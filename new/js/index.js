@@ -101,11 +101,19 @@ eachEvtCallback(menuElem.length, (i) => {
     e.preventDefault();
     const selfHash = e.currentTarget.hash;
     const contOffsetTop =  document.querySelector(selfHash).offsetTop + midElem.offsetTop;
-    window.scrollTo({
-      top : windowWid <= 770 ? contOffsetTop - 80 : contOffsetTop,
-      left: 0,
-      behavior : 'smooth'
-    });
+    const agent = navigator.userAgent.toLowerCase();
+    const offsetTop = windowWid <= 770 ? contOffsetTop - 80 : contOffsetTop;
+
+    if((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || agent.indexOf("msie") != -1){
+      window.scroll(0, offsetTop);
+    }else{
+      window.scrollTo({
+        top : offsetTop,
+        left: 0,
+        behavior : 'smooth'
+      });
+    }
+    
   });
 });
 
