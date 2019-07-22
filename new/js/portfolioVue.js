@@ -25,7 +25,7 @@ const app = new Vue({
         link : '//naver.com',
         tit : 'title',
         img : 'https://huhdanbi.github.io/resume/portfolio/images/image_friends.png',
-        desc : 'something 100% / something 80%'
+        desc : '마크업 100% / 스크립트 80%'
       },
       { 
         companyTit: 'some', 
