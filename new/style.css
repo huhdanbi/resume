@@ -107,7 +107,7 @@ html, body, #wrap_cv{height:100%}
 .owl-carousel .owl-nav{float:left}
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev{display:none;position:relative;float:left;width:30px;height:30px;margin-left:2px;border:1px solid #666;transition:all .4s}
-/* .owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-next span,
 .owl-carousel .owl-nav button.owl-prev span{display:none}
 .owl-carousel .owl-nav button:first-child{margin-left:0}
 .owl-carousel .owl-nav button.owl-prev::after,
@@ -115,7 +115,7 @@ html, body, #wrap_cv{height:100%}
 .owl-carousel .owl-nav button.owl-prev::after{content:'\f053'}
 .owl-carousel .owl-nav button.owl-next::after{content:'\f054'}
 .owl-carousel .owl-nav button:hover{background-color:#fe8b55;border-color:#fe8b55}
-.owl-carousel .owl-nav button:hover::after{color:#fff} */
+.owl-carousel .owl-nav button:hover::after{color:#fff}
 
 .owl-carousel .owl-dots{float:left}
 .owl-carousel .owl-dots button{width:11px;height:11px;margin-left:5px;border-radius:50%;background-color:#c0c2c3}
@@ -144,9 +144,11 @@ html, body, #wrap_cv{height:100%}
   .txt_end{padding-top:80px;margin-top:80px}
 }
 
-@media screen and (max-width: 1100px){
-  
-  
+
+@media screen and (max-width: 1000px) {
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev{display:block}
+  .owl-carousel .owl-dots{display:none}
 }
 
 
@@ -164,7 +166,6 @@ html, body, #wrap_cv{height:100%}
   
   /* mid_cv */
   .mid_cv{left:120px;padding:80px 40px}
-  
 }
 
 

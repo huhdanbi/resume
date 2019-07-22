@@ -101,7 +101,7 @@ const portfolio = new Vue({
         "desc" : "마크업 작업 담당자"
       },
       {
-        "name" : "카카오 네비 헬로카봇 프로모션",
+        "name" : "카카오네비 헬로카봇 프로모션",
         "link" : "https://kakaonavi.kakao.com/launch/event/carbot/index.do",
         "company" : "디케이테크인",
         "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_carbot.png",
