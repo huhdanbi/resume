@@ -29,6 +29,7 @@ const scrollBox = document.querySelectorAll('.box_progress ')[0];
 const scrollBG = scrollBox.querySelectorAll('.scroll_progress')[0];
 const navElem = document.querySelectorAll('.wrap_nav')[0];
 const menuElem = navElem.querySelectorAll('.link_menu');
+const midElem = document.querySelectorAll('.mid_cv')[0];
 const evtArr = ['resize', 'scroll'];
 let scrollState = true;
 
@@ -66,9 +67,9 @@ const setProgressEvt = (scrollTop) => {
 
 //set evt 
 const setMenuAddClass = () => {
-  const conHeight = document.querySelectorAll('.mid_cv')[0].offsetTop;
+  const conHeight = midElem.offsetTop;
   
-  if( (window.scrollY >= conHeight) && scrollState ){
+  if( (window.scrollY >= (conHeight - 80)) && scrollState ){
     navElem.classList.add('on');
     scrollState = false;
   }else if( (window.scrollY <= conHeight) && !scrollState ){
@@ -95,13 +96,16 @@ eachEvtCallback(evtArr.length, (i) => {
   });
 });
 
+eachEvtCallback(menuElem.length, (i) => {
+  menuElem[i].addEventListener('click', (e) => {
+    e.preventDefault();
+    const selfHash = e.currentTarget.hash;
+    const contOffsetTop =  document.querySelector(selfHash).offsetTop + midElem.offsetTop;
+    window.scrollTo({
+      top : contOffsetTop - 80,
+      left: 0,
+      behavior : 'smooth'
+    });
+  });
+});
 
-// for(let i=0;i<evtArr.length;i+=1){
-//   window.addEventListener(evtArr[i], () => {
-//     const scrollTop = (window.scrollY);
-
-//     setMenuAddClass();
-//     setProgressEvt(scrollTop);
-//   });
-  
-// }

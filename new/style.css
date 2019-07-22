@@ -17,6 +17,7 @@ a:active{background-color:transparent}
 address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
 table{border-collapse:collapse}
 
+/* html{scroll-behavior: smooth;} */
 html, body, #wrap_cv{height:100%}
 
 
@@ -121,14 +122,16 @@ html, body, #wrap_cv{height:100%}
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{display:block}
 .wrap_cont .txt_desc{float:right;font-size:11px}
 
-.txt_end{display:block;padding-top:50px;margin-top:50px;border-top:1px solid #dedede;text-align:center}
+.txt_end{display:block;padding-top:100px;margin-top:100px;border-top:1px solid #dedede;text-align:center}
 
 @media screen and (max-width: 1200px) {
   .scroll_cv{width:130px}
 
   /* mid_cv */
   .mid_cv{left:130px;padding:80px 50px}
-  .mid_cv .cont_cv .wrap_tit{margin:0 50px 0 30px}
+  .mid_cv .cont_cv .wrap_tit{margin-right:80px}
+
+  .txt_end{padding-top:80px;margin-top:80px}
 }
 
 @media screen and (max-width: 1100px){
@@ -141,6 +144,7 @@ html, body, #wrap_cv{height:100%}
   /* mid_cv */
   .mid_cv .cont_cv .wrap_tit{width:100%;margin:0 0 30px}
   .mid_cv .cont_cv .wrap_cont{width:100%}
+  
 }
 
 
@@ -158,6 +162,7 @@ html, body, #wrap_cv{height:100%}
   
   /* mid_cv */
   .mid_cv{left:120px;padding:80px 40px}
+  
 }
 
 
@@ -183,4 +188,6 @@ html, body, #wrap_cv{height:100%}
   .mid_cv{position:absolute;left:14px;right:14px;padding:40px 20px}
   .mid_cv .cont_cv .wrap_tit{width:100%;margin-right:0}
   .group_exp .area_tit .txt_etc{display:block}
+  
+  .txt_end{padding-top:40px;margin-top:40px}
 }

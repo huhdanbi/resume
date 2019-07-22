@@ -14,9 +14,65 @@
 //   `
 // })
 
+const skill = new Vue({
+  el: '.skill_cont',
+  data:()=>({
+    list: [
+      { 
+        tit: 'HTML/CSS', 
+        desc : [
+          'some',
+          'some2'
+        ]
+      },
+      { 
+        tit: 'JAVASCRIPT', 
+        desc : [
+          'some',
+          'some2'
+        ]
+      },
+      { 
+        tit: 'IDE', 
+        desc : [
+          'some',
+          'some2'
+        ]
+      },{ 
+        tit: 'ETC', 
+        desc : [
+          'some',
+          'some2'
+        ]
+      }
+    ]
+  })
+});
 
+const career = new Vue({
+  el: '.career_cont',
+  data:()=>({
+    list: [
+      { 
+        tit: 'tit', 
+        desc : '이름이에여 이름',
+        date : '2019.07.22 ~ 2019.07.22',
+        use : ['html','css','javascript'],
+        proj : [
+          {
+            tit : 'tit',
+            desc : [
+              '내용1',
+              '내용2'
+            ]
+          }
+        ]
+      }
+    ]
+  })
+});
 
-const app = new Vue({
+const portfolio = new Vue({
   el: '.owl-carousel',
   data:()=>({
     list: [
@@ -58,3 +114,5 @@ const app = new Vue({
     ]
   })
 });
+
+

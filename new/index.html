@@ -44,6 +44,7 @@
       <!-- mid_cv -->
       <div class="mid_cv">
 
+        <!-- skill -->
         <div class="cont_cv" id="top">
           <div class="wrap_tit">
             <strong>BLANK</strong>
@@ -53,47 +54,17 @@
             </span>
           </div>
 
-          <div class="wrap_cont">
-            <dl class="list_cv">
-              <dt>SUBTIT</dt>
-              <dd>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.</dd>
-              <dd>무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.</dd>
-              <dd>남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세.</dd>
-              <dd>무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.</dd>
-              <dd>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.</dd>
-            </dl>
-  
-            <dl class="list_cv">
-              <dt>SUBTIT</dt>
-              <dd>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.</dd>
-              <dd>무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.</dd>
-              <dd>남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세.</dd>
-              <dd>무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.</dd>
-              <dd>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.</dd>
-            </dl>
-  
-            <dl class="list_cv">
-              <dt>SUBTIT</dt>
-              <dd>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.</dd>
-              <dd>무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.</dd>
-              <dd>남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세.</dd>
-              <dd>무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.</dd>
-              <dd>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.</dd>
-            </dl>
-
-            <dl class="list_cv">
-              <dt>SUBTIT</dt>
-              <dd>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.</dd>
-              <dd>무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.</dd>
-              <dd>남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세.</dd>
-              <dd>무궁화 삼천리 화려강산 대한 사람, 대한으로 길이 보전하세.</dd>
-              <dd>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세.</dd>
+          <div class="wrap_cont skill_cont">
+            <dl class="list_cv" v-for="item in list">
+              <dt>{{item.tit}}</dt>
+              <dd v-for="descItem in item.desc">{{descItem}}</dd>
             </dl>
           </div>
-          
         </div>
+        <!-- //skill -->
 
-        <div class="cont_cv" id="middle">
+        <!-- career -->
+        <div class="cont_cv career_cont" id="middle">
           <div class="wrap_tit">
             <strong>BLANK</strong>
             <span class="txt_cv">
@@ -103,24 +74,22 @@
           </div>
           
           <div class="wrap_cont">
-            <div class="group_exp">
+            <div class="group_exp" v-for="item in list">
               <div class="area_tit">
-                <em class="tit_emph">이름이에여 이름</em>
-                <span class="txt_etc"> 백두산 / 2019.07.15 ~ 2019.07.15</span>
+                <em class="tit_emph">{{item.tit}}</em>
+                <span class="txt_etc">{{item.desc}} / {{item.date}}</span>
                 <ul class="list_obj">
-                  <li class="txt_html">hrml</li>
-                  <li class="txt_css">css</li>
-                  <li class="txt_js">JavaScript</li>
+                  <li :class="'txt_' + use" v-for="use in item.use">{{use}}</li>
                 </ul>
               </div>
-              <dl class="list_cv">
-                <dt>132</dt>
-                <dd>동해물과 백두산이 마르고 닳도록 하느님이 보우하사</dd>
-                <dd>동해물과 백두산이 마르고 닳도록 하느님이</dd>
+              <dl class="list_cv" v-for="proj in item.proj">
+                <dt>{{proj.tit}}</dt>
+                <dd v-for="projDesc in proj.desc">{{projDesc}}</dd>
               </dl>
             </div>
           </div>
         </div>
+        <!-- //career -->
 
         <div class="cont_cv pf_cont" id="bottom">
           <div class="wrap_tit">
