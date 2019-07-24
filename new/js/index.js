@@ -47,6 +47,11 @@ const setProgressEvt = (scrollTop) => {
   const progress = scrollProgress(scrollTop);
 
   if( scrollTop/200 > 0 ) topCV.style.opacity = 1 - (scrollTop/450);
+  if(windowWid <= 1250 || windowWid >= 750 ){
+    navElem.classList.add('fix');
+  }else{
+    navElem.classList.remove('fix');
+  }
 
   if( windowWid <= 580 ){
     navElem.classList.remove('fix');
@@ -54,10 +59,7 @@ const setProgressEvt = (scrollTop) => {
     scrollBG.style.width = progress;
     scrollBG.style.height = '8px';
     scrollBG.style.transition = 'width .5s';
-  }else if(windowWid <= 1250 && windowWid >= 750 ){
-    navElem.classList.add('fix');
   }else{
-    navElem.classList.remove('fix');
     scrollBox.classList.remove('m_progress');
     scrollBG.style.height = progress;
     scrollBG.style.width = '8px';
