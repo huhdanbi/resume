@@ -195,7 +195,7 @@ const portfolio = new Vue({
     list: [
       {
         "name" : "비트파이 - 거래소",
-        "link" : "//bit314.com/",
+        "link" : "http://bit314.com/",
         "company" : "HB invest",
         "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_bitpi.png",
         "desc" : ['html','css','javascript']
@@ -211,7 +211,7 @@ const portfolio = new Vue({
         "name" : "암호화폐 통합 실시간 차트",
         "link" : "#none1",
         "company" : "HB invest",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_chart.png",
+        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_bChart.png",
         "desc" : ['html','css','javascript']
       },
       {
