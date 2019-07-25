@@ -102,7 +102,7 @@
                       <li :class="'txt_' + use" v-for="use in item.desc">{{use}}</li>
                     </ul>
 
-                    <a :href="item.link" class="link_item" @click="urlState(item.link)" v-bind:target="item.link == '#none' ? '_self' : '_blank'">자세히 보기</a>
+                    <a :href="item.link" class="link_item" @click="urlState(item.link)" v-bind:target="(item.link == '#none') || (item.link == '#none1')? '_self' : '_blank'">자세히 보기</a>
                   </div>
                 </div>
               </div>

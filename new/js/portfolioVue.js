@@ -194,39 +194,25 @@ const portfolio = new Vue({
   data:{
     list: [
       {
-        "name" : "카카오 프렌즈 글로벌몰",
-        "link" : "https://us.kakaofriends.com/",
-        "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_friends.png",
-        "desc" : ['html','css']
+        "name" : "비트파이 - 거래소",
+        "link" : "//bit314.com/",
+        "company" : "HB invest",
+        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_bitpi.png",
+        "desc" : ['html','css','javascript']
       },
       {
-        "name" : "카카오 프렌즈 글로벌몰",
-        "link" : "https://us.kakaofriends.com/",
-        "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_friends.png",
-        "desc" : ['html','css']
+        "name" : "사내 어드민",
+        "link" : "#none1",
+        "company" : "HB invest",
+        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_bAdmin.png",
+        "desc" : ['html','css','javascript']
       },
       {
-        "name" : "카카오 프렌즈 글로벌몰",
-        "link" : "https://us.kakaofriends.com/",
-        "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_friends.png",
-        "desc" : ['html','css']
-      },
-      {
-        "name" : "카카오 프렌즈 글로벌몰",
-        "link" : "https://us.kakaofriends.com/",
-        "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_friends.png",
-        "desc" : ['html','css']
-      },
-      {
-        "name" : "카카오 프렌즈 글로벌몰",
-        "link" : "https://us.kakaofriends.com/",
-        "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_friends.png",
-        "desc" : ['html','css']
+        "name" : "암호화폐 통합 실시간 차트",
+        "link" : "#none1",
+        "company" : "HB invest",
+        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_chart.png",
+        "desc" : ['html','css','javascript']
       },
       {
         "name" : "카카오 프렌즈 글로벌몰",
@@ -257,6 +243,13 @@ const portfolio = new Vue({
         "desc" : ['html','css']
       },
       {
+        "name" : "다음검색 멜론 차트",
+        "link" : "https://search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q=%EB%A9%9C%EB%A1%A0+%EC%B0%A8%ED%8A%B8",
+        "company" : "디케이테크인",
+        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_melon.png",
+        "desc" : ['html','css']
+      },
+      {
         "name" : "2017 올해의 검색어",
         "link" : "https://search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q=%EC%98%AC%ED%95%B4%EC%9D%98+%EA%B2%80%EC%83%89%EC%96%B4",
         "company" : "디케이테크인",
@@ -271,7 +264,7 @@ const portfolio = new Vue({
         "desc" : ['html','css','javascript']
       },
       {
-        "name" : "윔팩토리 사이트 구축",
+        "name" : "윔팩토리",
         "link" : "https://www.wimfactory.com/index_v2.html",
         "company" : "울랄라랩",
         "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_fact.png",
@@ -285,7 +278,7 @@ const portfolio = new Vue({
         "desc" : ['html','css','javascript']
       },
       {
-        "name" : "참투어 사이트 구축",
+        "name" : "참투어",
         "link" : "#none",
         "company" : "포비즈넷",
         "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_charm.png",
@@ -325,6 +318,9 @@ const portfolio = new Vue({
     urlState : function(url){
       if( url == '#none' ){
         alert('이미 사라진 페이지에요ㅠㅠ..');
+        return false;
+      }else if( url == '#none1' ){
+        alert('링크를 제공할 수 없는 사이트입니다..')
         return false;
       }
     }
