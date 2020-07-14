@@ -37,7 +37,8 @@ const skill = new Vue({
           'Vanilla JS로 기능 구현이 가능합니다.',
           'JavaScript Vue.js 템플릿 작업의 경험이 있습니다.',
           'nodeJS와 socket.io를 이용한 실시간 데이터 처리가 가능합니다.',
-          '재사용성과 유지보수를 고려해 코드를 모듈화하여 작성하기 위해 노력합니다.'
+          '재사용성과 유지보수를 고려해 코드를 모듈화하여 작성하기 위해 노력합니다.',
+          'Vue.js 의 컴포넌트 및 문법을 활용한 UI개발의 경험이 있습니다.'
         ]
       },
       { 
@@ -66,9 +67,16 @@ const career = new Vue({
   el: '.career_cont',
   data:{
     list: [{ 
+      tit: 'SK C&C AI 프로젝트', 
+      desc : '프리랜서',
+      date : '2019.09.16 ~ 2020.06.30',
+      use : ['html','css','Vue'],
+      txt : 'AI로 기능하는 드론 및 CCTV를 실시간으로 모니터링 하는 사이트로 Vue.js를 활용한 마크업을 담당했습니다.'
+      + '\n상태에 맞는 데이터와 이벤트를 보여주기 위해 Vue의 컴포넌트 및 문법을 활용한 간단한 UI개발도 함께 진행했습니다.'
+    },{ 
       tit: 'HB invest', 
       desc : '개발팀',
-      date : '2018.12.03 ~ 현재',
+      date : '2018.12.03 ~ 2019.09.06',
       use : ['html','css','javascript'],
       txt : '비트코인 트레이딩 플랫폼 거래소인 비트파이를 서비스하며, 마크업과 스크립트 개발을 담당했습니다.'
         + '\n직접 개발 작업환경을 구성해 적용하며 좀 더 웹팩을 익숙하게 다룰 수 있게 되었습니다.'
@@ -193,6 +201,13 @@ const portfolio = new Vue({
   el: '.owl-carousel',
   data:{
     list: [
+      {
+        "name" : "SK C&C AI 프로젝트",
+        "link" : "#none1",
+        "company" : "프리랜서",
+        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_sk.png",
+        "desc" : ['html','css','Vue']
+      },
       {
         "name" : "비트파이 - 거래소",
         "link" : "http://bit314.com/",
