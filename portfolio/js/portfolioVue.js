@@ -205,126 +205,126 @@ const portfolio = new Vue({
         "name" : "SK C&C AI 프로젝트",
         "link" : "#none1",
         "company" : "프리랜서",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_sk.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_sk.png",
         "desc" : ['html','css','Vue']
       },
       {
         "name" : "비트파이 - 거래소",
         "link" : "http://bit314.com/",
         "company" : "HB invest",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_bitpi.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_bitpi.png",
         "desc" : ['html','css','javascript']
       },
       {
         "name" : "사내 어드민",
         "link" : "#none1",
         "company" : "HB invest",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_bAdmin.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_bAdmin.png",
         "desc" : ['html','css','javascript']
       },
       {
         "name" : "암호화폐 통합 실시간 차트",
         "link" : "#none1",
         "company" : "HB invest",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_bChart.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_bChart.png",
         "desc" : ['html','css','javascript']
       },
       {
         "name" : "카카오 프렌즈 글로벌몰",
         "link" : "https://us.kakaofriends.com/",
         "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_friends.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_friends.png",
         "desc" : ['html','css']
       },
       {
         "name" : "카카오 스토리 채널카드",
         "link" : "https://accounts.kakao.com/login/kakaostory",
         "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_story.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_story.png",
         "desc" : ['html','css']
       },
       {
         "name" : "카카오네비 헬로카봇 프로모션",
         "link" : "https://kakaonavi.kakao.com/launch/event/carbot/index.do",
         "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_carbot.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_carbot.png",
         "desc" : ['html','css']
       },
       {
         "name" : "모바일 다음메인 통합슬롯",
         "link" : "https://m.daum.net/",
         "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_newsTab.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_newsTab.png",
         "desc" : ['html','css']
       },
       {
         "name" : "다음검색 멜론 차트",
         "link" : "https://search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q=%EB%A9%9C%EB%A1%A0+%EC%B0%A8%ED%8A%B8",
         "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_melon.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_melon.png",
         "desc" : ['html','css']
       },
       {
         "name" : "2017 올해의 검색어",
         "link" : "https://search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q=%EC%98%AC%ED%95%B4%EC%9D%98+%EA%B2%80%EC%83%89%EC%96%B4",
         "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_query.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_query.png",
         "desc" : ['html','css','javascript']
       },
       {
         "name" : "다음검색 스포츠 검색개편",
         "link" : "https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&q=LG%ED%8A%B8%EC%9C%88%EC%8A%A4",
         "company" : "디케이테크인",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_lg.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_lg.png",
         "desc" : ['html','css','javascript']
       },
       {
         "name" : "윔팩토리",
         "link" : "https://www.wimfactory.com/index_v2.html",
         "company" : "울랄라랩",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_fact.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_fact.png",
         "desc" : ['html','css','javascript']
       },
       {
         "name" : "WIM-X 대시보드 개편",
         "link" : "#none",
         "company" : "울랄라랩",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_wimx.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_wimx.png",
         "desc" : ['html','css','javascript']
       },
       {
         "name" : "참투어",
         "link" : "#none",
         "company" : "포비즈넷",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_charm.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_charm.png",
         "desc" : ['html','css']
       },
       {
         "name" : "산웅 엔지니어링",
         "link" : "#none",
         "company" : "포비즈넷",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_che.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_che.png",
         "desc" : ['html','css']
       },
       {
         "name" : "신명식품",
         "link" : "#none",
         "company" : "포비즈넷",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_bakery.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_bakery.png",
         "desc" : ['html','css']
       },
       {
         "name" : "스포톡",
         "link" : "#none",
         "company" : "포비즈넷",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_spo.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_spo.png",
         "desc" : ['html','css']
       },
       {
         "name" : "영광 상사화 축제",
         "link" : "#none",
         "company" : "포비즈넷",
-        "image" : "https://huhdanbi.github.io/resume/portfolio/images/image_fes.png",
+        "image" : "https://huhdanbi.github.io/resume/old/images/image_fes.png",
         "desc" : ['html','css']
       }
     ] 
