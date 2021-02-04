@@ -69,11 +69,11 @@ const career = new Vue({
     list: [{ 
       tit: '[노벨알엔디] 삼성전자 DS 프로젝트 (대외비)', 
       desc : '프리랜서',
-      date : '2019.09.16 ~ 2020.06.30',
-      use : ['html','css','javascript'],
-      txt : '(대외비) HTML5와 CSS3를 기본으로 UI에 필요한 프론트 개발을 함께 진행하였습니다.'
+      date : '2020.07.27 ~ 2021.03.01',
+      use : ['html','css'],
+      txt : '(대외비) HTML5와 CSS3를 기본으로 UI개발을 담당했습니다.'
     },{ 
-      tit: 'SK C&C AI 프로젝트', 
+      tit: '[행복 ICT] SK C&C AI 프로젝트', 
       desc : '프리랜서',
       date : '2019.09.16 ~ 2020.06.30',
       use : ['html','css','Vue'],
