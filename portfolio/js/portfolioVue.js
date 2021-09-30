@@ -1,18 +1,3 @@
-// Vue.component('todo-item', {
-//   props: ['item'],
-//   template: `
-//   <div class="item">
-//     <div class="group_item">
-//       <div class="area_item">
-//         <em class="sub_item">{{item.companyTit}}</em> 
-//         <strong class="tit_item">{{item.tit}}</strong>
-//         <span class="desc_item">{{item.desc}}</span>
-//         <a v-bind:href="'{{item.link}}'" target="_blank" class="link_item">자세히보기</a>
-//       </div>
-//     </div>
-//   </div>
-//   `
-// })
 
 const skill = new Vue({
   el: '.skill_cont',
@@ -67,22 +52,34 @@ const career = new Vue({
   el: '.career_cont',
   data:{
     list: [{ 
-      tit: '[노벨알엔디] 삼성전자 DS 프로젝트 (대외비)', 
+      tit: '[바인소프트] 삼성카드 모바일 UI개편 프로젝트', 
       desc : '프리랜서',
-      date : '2020.07.27 ~ 2021.03.01',
+      date : '2020.04 ~ 2021.06',
+      use : ['Vue', 'javascript'],
+      txt : '삼성카드 프로젝트의 모바일 화면 UI개편사업으로, Vue 환경에서 공통 컴포넌트 개발 및 화면 UI개발을 진행했습니다.'
+    }, { 
+      tit: '[대원 C&C] SK Telecom 바로이사 프로젝트', 
+      desc : '프리랜서',
+      date : '2020.04 ~ 2021.06',
       use : ['html','css'],
-      txt : '(대외비) HTML5와 CSS3를 기본으로 UI개발을 담당했습니다.'
+      txt : 'SK Telecom 바로이사 모바일 프로젝트의 마크업을 담당하였습니다.'
+    },{ 
+      tit: '[노벨알엔디] 삼성전자 DS 프로젝트 (정보 대외비)', 
+      desc : '프리랜서',
+      date : '2020.07 ~ 2021.03',
+      use : ['html','css'],
+      txt : '(정보 대외비) HTML5와 CSS3를 기본으로 UI개발을 담당했습니다.'
     },{ 
       tit: '[행복 ICT] SK C&C AI 프로젝트', 
       desc : '프리랜서',
-      date : '2019.09.16 ~ 2020.06.30',
+      date : '2019.09 ~ 2020.06',
       use : ['html','css','Vue'],
       txt : 'AI로 기능하는 드론 및 CCTV를 실시간으로 모니터링 하는 사이트로 Vue.js를 활용한 마크업을 담당했습니다.'
       + '\n상태에 맞는 데이터와 이벤트를 보여주기 위해 Vue의 컴포넌트 및 문법을 활용한 간단한 UI개발도 함께 진행했습니다.'
     },{ 
       tit: 'HB invest', 
       desc : '개발팀',
-      date : '2018.12.03 ~ 2019.09.06',
+      date : '2018.12 ~ 2019.09',
       use : ['html','css','javascript'],
       txt : '비트코인 트레이딩 플랫폼 거래소인 비트파이를 서비스하며, 마크업과 스크립트 개발을 담당했습니다.'
         + '\n직접 개발 작업환경을 구성해 적용하며 좀 더 웹팩을 익숙하게 다룰 수 있게 되었습니다.'
