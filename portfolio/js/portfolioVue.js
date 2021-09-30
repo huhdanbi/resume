@@ -38,6 +38,7 @@ const skill = new Vue({
       },{ 
         tit: 'etc.', 
         desc : [
+          'Sketch, Zeplin, Figma 등 다양한 디자인툴의 사용 경험이 있습니다.',
           'JIRA를 이용해 업무 스케줄을 계획하며, WIKI를 통해 업무 분석, 가이드 작성이 가능합니다.'
         ]
       }
