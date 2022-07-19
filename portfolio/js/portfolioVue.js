@@ -21,9 +21,10 @@ const skill = new Vue({
         desc : [
           'Vanilla JS로 기능 구현이 가능합니다.',
           'API를 이용한 데이터 바인딩 작업이 가능합니다.',
+          'axios를 활용한 RESTful API의 경험이 있습니다.',
           '재사용성과 유지보수를 고려해 코드를 모듈화하여 작성하기 위해 노력합니다.',
           'nodeJS와 socket.io를 이용한 실시간 데이터 처리가 가능합니다.',
-          'Vue의 문법을 활용한 공통 컴포넌트 개발의 경험이 있습니다. ( v2.n 기준 )',
+          'Vue의 문법과 lifecycle을 활용한 공통 컴포넌트 개발의 경험이 있습니다.',
           'Vuetify를 사용하여 UI적용의 경험이 있습니다.'
         ]
       },
@@ -52,7 +53,14 @@ const skill = new Vue({
 const career = new Vue({
   el: '.career_cont',
   data:{
-    list: [{ 
+    list: [
+      { 
+      tit: '[텔레씽크] KTds safe2go', 
+      desc : '프리랜서',
+      date : '2021.11 ~',
+      use : ['Vue', 'javascript'],
+      txt : '국내외 입출국시 코로나 검사예약 대행을 위한 프로젝트로, Vue.js 를 위해 세팅된 환경에서 프론트 운영 개발을 진행했습니다.'
+    }, { 
       tit: '[바인소프트] 삼성카드 모바일 UI개편 프로젝트', 
       desc : '프리랜서',
       date : '2020.07 ~ 2021.10',
