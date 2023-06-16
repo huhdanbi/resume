@@ -72,6 +72,10 @@
                 <em class="tit_emph">{{item.tit}}</em>
                 <span class="txt_etc">{{item.desc}} /<br> {{item.date}}</span>
                 <span class="txt_summ" v-html="setRows(index)"></span>
+                <br>
+                <ul v-for="item in item.subTxt">
+                  <li>{{item}}</li>
+                </ul>
                 <ul class="list_obj" v-if="item.use">
                   <li :class="'txt_' + use" v-for="use in item.use">{{use}}</li>
                 </ul>
